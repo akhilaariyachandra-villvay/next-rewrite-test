@@ -5,16 +5,20 @@ const Root = () => {
   return (
     <>
       <header>
+        <div>This page is being served by CRA.</div>
+
         <nav className="navigation">
           <Link to={"/"}>Home</Link>
 
           <Link to={"/category"}>Categories</Link>
 
-          <Link to={"/category/1"}>Category Details</Link>
+          <a href="/osr">OSR</a>
         </nav>
       </header>
 
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 };
