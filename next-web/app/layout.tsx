@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,21 +19,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <div className="bg-black text-white p-2 text-lg text-center">
-            This page is being served by Next.js
-          </div>
+        <Providers>
+          <header>
+            <div className="bg-black text-white p-2 text-lg text-center">
+              This page is being served by Next.js
+            </div>
 
-          <nav className="flex flex-row gap-2 p-2 underline">
-            <Link href="/">Home</Link>
+            <nav className="flex flex-row gap-2 p-2 underline">
+              <Link href="/">Home</Link>
 
-            <Link href="/category">Categories</Link>
+              <Link href="/category">Categories</Link>
 
-            <Link href="/osr">OSR</Link>
-          </nav>
-        </header>
+              <Link href="/osr">OSR</Link>
 
-        <main className="p-2">{children}</main>
+              <Link href="/storage/cra">CRA Storage</Link>
+
+              <Link href="/storage/next">Next.js Storage</Link>
+            </nav>
+          </header>
+
+          <main className="p-2">{children}</main>
+        </Providers>
       </body>
     </html>
   );

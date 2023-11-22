@@ -13,6 +13,10 @@ const Root = () => {
           <Link to={"/category"}>Categories</Link>
 
           <a href="/osr">OSR</a>
+
+          <Link to="/storage/cra">CRA Storage</Link>
+
+          <a href="/storage/next">Next.js Storage</a>
         </nav>
       </header>
 
