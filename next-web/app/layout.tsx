@@ -24,9 +24,9 @@ export default function RootLayout({
           </div>
 
           <nav className="flex flex-row gap-2 p-2 underline">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
 
-            <a href="/category">Categories</a>
+            <Link href="/category">Categories</Link>
 
             <Link href="/osr">OSR</Link>
           </nav>
