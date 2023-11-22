@@ -93,7 +93,7 @@ const StoragePage = () => {
           <input id={localStorageId} {...register("localStorage")} />
         </div>
 
-        <input type="submit" style={{ cursor: "pointer" }} />
+        <button type="submit">Save</button>
       </form>
 
       <div>

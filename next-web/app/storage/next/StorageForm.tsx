@@ -63,7 +63,7 @@ const StorageForm = () => {
           <input id={localStorageId} {...register("localStorage")} />
         </div>
 
-        <input type="submit" className="cursor-pointer" />
+        <button type="submit">Save</button>
       </form>
       <div>
         <p>Current Cookie value: {cookies.value}</p>
