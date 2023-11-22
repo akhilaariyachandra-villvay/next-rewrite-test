@@ -1,17 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
+import "./Root.css";
 
 const Root = () => {
   return (
     <>
       <header>
-        <nav
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "0.75rem",
-            padding: "1rem",
-          }}
-        >
+        <nav className="navigation">
           <Link to={"/"}>Home</Link>
 
           <Link to={"/category"}>Categories</Link>

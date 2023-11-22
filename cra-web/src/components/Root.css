@@ -1,0 +1,6 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  padding: 1rem;
+}
