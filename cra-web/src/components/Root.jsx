@@ -12,7 +12,7 @@ const Root = () => {
 
           <Link to={"/category"}>Categories</Link>
 
-          <Link href="/osr">OSR</Link>
+          <a href="/osr">OSR</a>
         </nav>
       </header>
 
